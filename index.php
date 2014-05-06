@@ -1,8 +1,8 @@
 <?php
     
     $email = $_POST['email']; 
-    $from = 'From: contactpage@betwinsouls.com'; 
-    $to = 'joaquin_guardado@icloud.com'; 
+    $from = 'From: contactpagepage'; 
+    $to = 'youremail@domain.com'; 
     $subject = 'Let me know!';
   
 			
@@ -56,13 +56,13 @@
 
 		<!-- Start of Kokoro top bar -->
         <div class="top-bar">
-        	<a href="http://www.betwinsouls.com/contact.php">
-            <strong>Contact Us: </strong>(719) 433-5279
+        	<a href="#">
+            <strong>Contact Us: </strong>(111)111-1111
             </a>
             <span class="right">
 			<a href="#">Go To Our Homepage</a>
-			<a href="http://www.betwinsouls.com/blog" target="new">Read Our Blog</a>
-            <a href="https://www.facebook.com/betwinsouls" target="new">
+			<a href="#" target="new">Read Our Blog</a>
+            <a href="#" target="new">
             <strong>Follow us on Facebook</strong>
             </a>
             </span>
