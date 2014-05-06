@@ -1,4 +1,28 @@
-
+<?php
+    
+    $email = $_POST['email']; 
+    $from = 'From: contactpage@betwinsouls.com'; 
+    $to = 'joaquin_guardado@icloud.com'; 
+    $subject = 'Let me know!';
+  
+			
+    $body = "From: E-Mail: $email\n";
+				
+    if ($_POST['submit']) {
+			if ($email != '') {
+			if (mail ($to, $subject, $body, $from)) {
+				echo '<p>Your message has been sent!</p>';
+			} else {
+				echo '<p>Something went wrong, go back and try again!<p>';
+			}
+			
+			} else {
+				echo '<p>You need to fill in all required fields</p>';
+		
+		}
+    
+	}
+?>
 
 <!doctype html>
 
