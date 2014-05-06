@@ -1,0 +1,301 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**CSS RESET**/
+
+/**This zeroes out margings and padding**/
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul,
+ol, li, dl, dt, dd, form, a, fieldset, input, th, td
+{
+margin: 0; padding: 0; border: 0; outline: none;
+}
+
+/**This takes control of elements and defines margins and paddings for heading elements, also removes list style type from list elements. The font size for body element is also set here.**/
+
+body
+{
+line-height: 1;
+font-size: 88%;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+font-size: 100%;
+padding: .6em 0;
+margin: 0 15px;
+}
+
+ul, ol
+{
+	list-style: none;	
+	padding-left: 0;
+
+}
+
+li{
+	display: inline;
+}
+
+a
+{
+color: black;
+text-decoration: none;
+}
+
+a:hover
+{
+text-decoration: none;
+}
+
+
+img
+{
+border: 0;
+}
+
+
+/**CSS RESET END**/
+
+
+
+/**General Style**/
+body{
+	font-family: 'Audiowide', cursive;;
+	background: #fff;
+	font-weight: 400;
+	font-size: 1.5em;
+	color: #333;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+
+a{
+	color: #555;
+}
+
+
+.container{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.content{
+	width: 510px;
+	height:100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -50px 0 0 -270px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align:center;
+}
+
+
+/**Header Style**/
+.top-bar{
+	line-height: 24px;
+	font-size: 11px;
+	background: #fff;
+	background: rgba(255,140,0,1.00);
+	text-transform: uppercase;
+	z-index: 9999;
+	position: relative;
+	font-family: 'Audiowide', cursive;
+	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+}
+
+.top-bar a{
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #333;
+	display: inline-block;
+}
+
+.top-bar a:hover{
+	background: rgba(255,229,0,1.00);
+}
+
+.top-bar span.right{
+	float: right;
+}
+.top-bar span.right a{
+	float: left;
+	display: block;
+}
+
+.clr{
+	clear: both;
+	padding: 0;
+	height: 0;
+	margin: 0;
+}
+
+.ie-note{
+	color: #ac375d;
+	display: none;
+	font-size: 15px;
+}
+
+/**Content Style**/
+
+a {
+	display:inline;
+}
+
+.logo{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -50px 0 0 -260px;
+	/***
+	background: url(../images/BTSlogoColorSmall.png);
+	**/
+	background-repeat: no-repeat;
+	background-position: 1% 5%;
+	background-color: #FFFFFF;
+	font-size:1em;
+	text-align:center;	 
+	text-transform:uppercase;
+}
+
+.logo span{
+	font-size:0.8em;
+	text-transform:none;
+	color:#FF4F00;
+}
+
+.logo a {
+    display: inline-block;
+    padding-top: 5%;
+    margin: 0 auto;
+}	
+
+.logo:before{
+	content: '';
+	position: fixed;
+	left: 30px;
+	right: 30px;
+	height: 1px;
+	background: rgba(207,207,207,0.3);
+	top: 50%;
+	z-index: -1;
+}
+
+
+/**Form style**/
+
+form{
+	width: 570px;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	margin: -30px 0 0 -295px;
+	padding: 10px;
+	text-align:center;
+}
+
+form li{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 0.8em;
+	display:inline;
+}
+
+
+
+input{
+	width:200px;
+	border:1px solid #dedede;
+	padding:2px;
+	margin-top:3px;
+	margin-left:4px;
+	font-size:0.8em;
+	color:#3a3a3a;
+	text-align:center;
+	
+}
+
+
+input:focus, textarea:focus {
+    border: 1px solid rgba(255,140,0,1.00);
+}
+
+
+
+#button{
+	width:80px;
+	height:22px;
+	border:none;
+	cursor:pointer;
+}
+
+#button:hover {
+		opacity:0.9;
+	}
+	
+
+/**Footer Style**/
+
+.footer{
+	width:100%;
+	height:2%;
+	position: absolute;
+	paddin-bottom:4px;
+	padding-top: 4px;
+	bottom: 0;
+	background: rgba(255,140,0,1.00);
+	text-align:center;
+	font-family:'Audiowide', cursive;
+	color: #010101;
+	font-size: 14px;
+	text-transform:uppercase;
+}
+
+
+/**Media Queries
+
+@media screen and (max-width: 400px) {
+    
+img{
+	display:none;
+}
+	
+.content{
+	width: 240px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -50px 0 0 -135px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background: #fff;
+	border: 2px solid;
+	text-indent: -100px;
+	text-align:center;
+}
+
+.logo span{
+	font-size:0.4em;
+}
+
+.logo:before {
+	display:none;
+}
+	
+
+form{
+	width:200px;
+	margin:auto;
+	text-align:center;
+
+	
+}
+
+}
+
+*****/
