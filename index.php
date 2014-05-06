@@ -22,7 +22,7 @@
     
     <link rel="stylesheet" href="css/webfont.css"/>
 	
-    <link rel="stylesheet" href="css/mainpage.css" />
+    <link rel="stylesheet" href="styles.css" />
     
 </head>
 
