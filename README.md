@@ -1,4 +1,4 @@
 comingsoon
 ==========
 
-Simple coming soon page.
+Simple coming soon php page for begginers.  
